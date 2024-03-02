@@ -1,22 +1,18 @@
 import { Box, Heading, Image, Text } from "@chakra-ui/react";
 import pashalife_logo from "../../assets/pasha_life.svg";
-import landing from "../../assets/landing.jpeg"
-
 
 const Footer = () => {
     return (
-        <Box>
-            <Heading as="h1" size="lg" textAlign="center" p={4} bg="gray.700" color="green.200" fontFamily="">
-                New product by PASHA Life
+        <Box p={4} display="flex" flexDirection="column" gap="5px" justifyContent="center" alignItems="center" w="full">
+            <Box display="flex" alignItems="center">
+                <Heading as="h5" size="md" p={4} color="gray.600" fontFamily="Poppins" fontWeight="400">
+                    Product of 
                 </Heading>
-            <Box>
-                <Image src={pashalife_logo} alt="LifeHub Logo" width={200} />
+                <Box>
+                    <Image src={pashalife_logo} alt="LifeHub Logo" width={120} />
+                </Box>
             </Box>
-            <Text>sapak</Text>
-            <Box>
-                
-            </Box>
-            <Image rounded="full" width={500} height={500} src={landing} />
+            <Text color="gray.600" mt={2} fontWeight="400" fontFamily="Lato">&copy; All rights reserved</Text>
         </Box>
     );
 }
